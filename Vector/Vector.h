@@ -107,7 +107,7 @@ T & Vector<T>::front() {
 
 template <class T>
 T & Vector<T>::back() {
-    return *(this->end());
+    return *(this->end() - 1);
 }
 
 template <class T>

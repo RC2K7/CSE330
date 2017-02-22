@@ -63,7 +63,10 @@ int main()
    v6.push_back(101);
    assert(v6.size() == 2);
    assert(v6[0] == 100);
-   v6.push_back(101);
+   v6.push_back(102);
+   assert(v6.size() == 3);
+   assert(v6.front() == 100);
+   assert(v6.back() == 102);
 
    cout << "SUCCESS\n";
 }

@@ -114,7 +114,7 @@ template <class T>
 void Vector<T>::push_back(const T & val) {
     if (this->my_size == this->my_capacity)
         this->reserve(this->my_capacity + 5);
-    
+
     this->buffer[this->my_size++] = val;
 }
 
@@ -135,7 +135,7 @@ void Vector<T>::reserve(unsigned int cap) {
 
     for (int i = 0; i < this->my_size; i++)
         tempBuffer[i] = this->buffer[i];
-    
+
     delete[] this->buffer;
     this->buffer = tempBuffer;
     return;
@@ -145,7 +145,7 @@ template <class T>
 void Vector<T>::resize(unsigned int size) {
     if (size > this->my_size)
         this->reserve(size);
-    
+
     this->my_size = size;
 }
 

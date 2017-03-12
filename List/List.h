@@ -143,7 +143,7 @@ typename List<T>::iterator List<T>::begin() const
 
 template <class T>
 typename List<T>::iterator List<T>::end() const {
-    return iterator(this->last_link);
+    return iterator(this->last_link->next_link);
 }
 
 template <class T>
